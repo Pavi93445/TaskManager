@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/tasks")
+@CrossOrigin(origins = "http://localhost:4200git a")
 public class TaskController {
    private final TaskService taskService;
    private final TaskRepository taskRepository;

@@ -40,7 +40,7 @@ public class TaskService {
         existingtask.setDescription(task.getDescription());
         existingtask.setCompleted(task.isCompleted());
 
-        return taskRepository.save(task);
+        return taskRepository.save(existingtask);
     }
 }
 
