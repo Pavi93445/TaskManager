@@ -9,7 +9,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/tasks")
 @CrossOrigin(origins = {
-        "http://localhost:4200",
         "https://task-manager-frontend-three-snowy.vercel.app"
 })
 public class TaskController {
