@@ -12,11 +12,9 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200git a")
 public class TaskController {
    private final TaskService taskService;
-   private final TaskRepository taskRepository;
 
-   public TaskController(TaskService taskService,TaskRepository taskRepository){
+   public TaskController(TaskService taskService){
        this.taskService = taskService;
-       this.taskRepository = taskRepository;
    }
    @PostMapping
    public TaskEntity createTask(@RequestBody TaskEntity task){
